@@ -1,0 +1,78 @@
+g<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+<style>
+    .div{
+        background-color:brown;
+        color:white; 
+    }
+    .bt
+{
+    position: absolute;
+    top:700px;
+    left:700px;
+}
+    button{
+    background-color:brown;
+    color:black;
+    height:2.8rem;
+    width:180px;
+    border-radius: 10px;
+}
+    body{
+        background-image:url('https://wallup.net/wp-content/uploads/2015/12/182680-blurred-books-depth_of_field-vintage-748x468.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        text-align: center;
+    }
+    .dic1
+    {
+        font-size: larger;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+        color:black;
+        align-content: center;
+    }
+</style>
+</head>
+<body>
+    <form name="myForm"  onsubmit="return validateForm()" method="post">
+    <div class="div">
+    <h1>BOOK ORDER FORM</h1></div>
+   <div  class="dic1">
+    <br><br>
+    Enter your name :<input type="text" name="name" value=""><br><br>
+    Email:<input type="email"  id="email" p name="email"><br><br>
+    Enter password:<input type="text" name="pass" id = "pswd"><br><br>
+    Enter Mobile Number:<input type="number" name="phone"><br><br>
+    Age:<input type="number" name="age"><br><br>
+    Paying method:<br>
+    <input type="radio" name="radio1" value="phone pe">phone pe<br>
+    <input type="radio" name="radio1" value="googlepay">Google pay<br><br>
+    <label for="products">Book title</label>
+                      <select type="text" value="" name="products">
+                      <option></option>
+                      <option>horror</option>
+                      <option>Humour</option>
+                      <option>jokes</option>
+                      <option>Fairy tales</option>
+                      <option>Historic</option>
+                   </select>
+                <br>
+                <br>
+    Library Id:<br>
+    <input type="text" name="lib" ><br>
+    <br><br>
+        <div>
+            <button id="btn" class="bt" name="submit">ORDER NOW</button>
+        </div></p>
+    </form>
+<script  src="app.js"></script>
+</body>
+</html>
